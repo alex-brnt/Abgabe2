@@ -8,7 +8,7 @@ bikesharing <- read.csv(
 )
 
 
-# Datensatz nach Station filtern
+# Datensatz nach Station "Stanton St & Chrystie St" filtern
 # ----------------------------------------------------------
 bikesharing_station <- bikesharing[
   bikesharing$station == "Stanton St & Chrystie St", 
@@ -23,7 +23,6 @@ colSums(is.na(bikesharing_station))
 bikesharing_station <- bikesharing_station[
   order(bikesharing_station$date),
 ]
-
 
 # Kopie des Datensatzes
 # ----------------------------------------------------------
@@ -52,7 +51,6 @@ for (j in 1:ncol(bikesharingClean)) {
     }
   }
 }
-
 
 # Behandlung von Randwerten (erste und letzte Zeile)
 # ----------------------------------------------------------
@@ -96,7 +94,3 @@ ausleihen_pro_monat <- aggregate(
 ausleihen_pro_monat[
   which.max(ausleihen_pro_monat$count),
 ]
-
-
-
-

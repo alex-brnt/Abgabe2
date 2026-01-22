@@ -1,4 +1,4 @@
-# Simulation von Shut the Box und Bestimmung der Gewinnwahrscheinlichkeit
+# Simulation des Spiels und Bestimmung der Gewinnwahrscheinlichkeit
 # -----------------------------------------------------------------------
 
 # Prüft, ob eine gültige Kombination existiert
